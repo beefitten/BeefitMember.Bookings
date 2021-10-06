@@ -1,0 +1,12 @@
+/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/bin/Debug/net5.0/Persistence.deps.json
+/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/bin/Debug/net5.0/Persistence.dll
+/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/bin/Debug/net5.0/ref/Persistence.dll
+/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/bin/Debug/net5.0/Persistence.pdb
+/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/obj/Debug/net5.0/Persistence.csprojAssemblyReference.cache
+/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/obj/Debug/net5.0/Persistence.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/obj/Debug/net5.0/Persistence.AssemblyInfoInputs.cache
+/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/obj/Debug/net5.0/Persistence.AssemblyInfo.cs
+/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/obj/Debug/net5.0/Persistence.csproj.CoreCompileInputs.cache
+/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/obj/Debug/net5.0/Persistence.dll
+/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/obj/Debug/net5.0/ref/Persistence.dll
+/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/obj/Debug/net5.0/Persistence.pdb
