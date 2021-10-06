@@ -1,7 +1,6 @@
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Consumer.Service.Handlers;
 using Consumer.Service.Handlers.Interfaces;
 using Domain.Events;
 using Microsoft.Extensions.Hosting;
@@ -17,9 +16,9 @@ namespace Consumer.Service.Consumer
         private IModel _channel;
         private readonly IBookingsHandler _bookingsHandler; 
         
-        public MqConsumer()
-        { 
-            _bookingsHandler = new BookingsHandler();
+        public MqConsumer(IBookingsHandler bookingsHandler)
+        {
+            _bookingsHandler = bookingsHandler;
            setupConnection();
         }
 
@@ -30,7 +29,7 @@ namespace Consumer.Service.Consumer
             _connection = factory.CreateConnection();
             _channel = _connection.CreateModel();
             _channel.QueueDeclare(
-                queue: "classBooking",
+                queue: "BeefitMember.ClassBookings",
                 durable: false,
                 exclusive: false,
                 autoDelete: false,
@@ -61,7 +60,7 @@ namespace Consumer.Service.Consumer
             consumer.Unregistered += ConsumerUnregistered;
             consumer.ConsumerCancelled += ConsumerCancelled;
             
-            _channel.BasicConsume("classBooking", false, consumer);
+            _channel.BasicConsume("BeefitMember.ClassBookings", false, consumer);
             
             return Task.CompletedTask;
         }

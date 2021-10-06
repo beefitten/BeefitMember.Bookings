@@ -1,4 +1,5 @@
 using Consumer.Service.Consumer;
+using Consumer.Service.Setup;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -18,11 +19,11 @@ namespace Consumer.Service
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddHostedService<MqConsumer>();
+            services.AddBookingsHandler();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            
         }
     }
 }
