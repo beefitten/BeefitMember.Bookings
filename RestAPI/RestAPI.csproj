@@ -5,12 +5,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+      <ProjectReference Include="..\Domain\Domain.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Consumer.Servic\Consumer.Servic.csproj" />
-      <ProjectReference Include="..\Domain\Domain.csproj" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.2" />
     </ItemGroup>
 
 </Project>

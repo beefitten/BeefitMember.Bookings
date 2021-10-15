@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "W5uzcVcw4r6g/PV7lVxt/Yq3u5rPy0I2JrKGv7DCFdVsdMjC39qUsIf9HAxQbEAjelJ2uEFJYDHgm1mz0rBJgg==",
+  "dgSpecHash": "9dUH54EXX/pk2YZZUz50U6LjDd1HAlYmO+R+nv7Wlo+0z4IJ1oWGyn/4Gv/YsCsw/AtpINqXnBFYLqaJXW99LQ==",
   "success": true,
   "projectFilePath": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/RestAPI/RestAPI.csproj",
   "expectedPackageFiles": [
@@ -8,10 +8,10 @@
     "/Users/nikolajhuynh/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
     "/Users/nikolajhuynh/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
     "/Users/nikolajhuynh/.nuget/packages/rabbitmq.client/6.2.2/rabbitmq.client.6.2.2.nupkg.sha512",
-    "/Users/nikolajhuynh/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
-    "/Users/nikolajhuynh/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
-    "/Users/nikolajhuynh/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.3/swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
-    "/Users/nikolajhuynh/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.3/swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+    "/Users/nikolajhuynh/.nuget/packages/swashbuckle.aspnetcore/6.2.2/swashbuckle.aspnetcore.6.2.2.nupkg.sha512",
+    "/Users/nikolajhuynh/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.2/swashbuckle.aspnetcore.swagger.6.2.2.nupkg.sha512",
+    "/Users/nikolajhuynh/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.2/swashbuckle.aspnetcore.swaggergen.6.2.2.nupkg.sha512",
+    "/Users/nikolajhuynh/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.2/swashbuckle.aspnetcore.swaggerui.6.2.2.nupkg.sha512",
     "/Users/nikolajhuynh/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
     "/Users/nikolajhuynh/.nuget/packages/system.threading.channels/4.7.1/system.threading.channels.4.7.1.nupkg.sha512"
   ],

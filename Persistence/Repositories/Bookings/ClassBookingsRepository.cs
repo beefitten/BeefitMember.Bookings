@@ -20,15 +20,12 @@ namespace Persistence.Repositories.Bookings
 
         public Task<HttpStatusCode> MakeReservation(ClassBookingModel model)
         {
-            if (model == null)
-                throw new Exception("Empty model is not allowed");
-
-            var classToBook = _collection.FindAsync(c => c.ClassId == model.ClassId);
-            if(classToBook == null)
-                return HttpStatusCode.Conflict
-
-
-
+            // if (model == null)
+            //     throw new Exception("Empty model is not allowed");
+            //
+            // var classToBook = _collection.FindAsync(c => c.ClassId == model.ClassId);
+            // if (classToBook == null)
+            //     return HttpStatusCode.OK();
         }
     }
 }

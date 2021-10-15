@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "E5Lm9IDD1/MydphCX2OGUP7D9NS608Jwl0LU03t5sHGrRthyzereJt28yoL0X3arIqTKGtPkVQl4ncSutC3pdw==",
+  "dgSpecHash": "WFIdMy69sP9nCgQG+NdRxkJU2KLu5s+o0rdZgr12SMUIIXB9CFpXd0MR/5hQx4Uu/WsgdoPk6wtpoqSKNpaSqA==",
   "success": true,
   "projectFilePath": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Consumer.Service/Consumer.Service.csproj",
   "expectedPackageFiles": [
@@ -25,10 +25,10 @@
     "/Users/nikolajhuynh/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
     "/Users/nikolajhuynh/.nuget/packages/rabbitmq.client/6.2.2/rabbitmq.client.6.2.2.nupkg.sha512",
     "/Users/nikolajhuynh/.nuget/packages/sharpcompress/0.23.0/sharpcompress.0.23.0.nupkg.sha512",
-    "/Users/nikolajhuynh/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
-    "/Users/nikolajhuynh/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
-    "/Users/nikolajhuynh/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.3/swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
-    "/Users/nikolajhuynh/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.3/swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+    "/Users/nikolajhuynh/.nuget/packages/swashbuckle.aspnetcore/6.2.2/swashbuckle.aspnetcore.6.2.2.nupkg.sha512",
+    "/Users/nikolajhuynh/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.2/swashbuckle.aspnetcore.swagger.6.2.2.nupkg.sha512",
+    "/Users/nikolajhuynh/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.2/swashbuckle.aspnetcore.swaggergen.6.2.2.nupkg.sha512",
+    "/Users/nikolajhuynh/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.2/swashbuckle.aspnetcore.swaggerui.6.2.2.nupkg.sha512",
     "/Users/nikolajhuynh/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
     "/Users/nikolajhuynh/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
     "/Users/nikolajhuynh/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
