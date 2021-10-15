@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VsZnCjpdTaOzdosPkfS+gRyQ1H63WHImav4J5PEMqVgaNeyxJNyVi0Dxorb6hBT+EKDe6mbo/e+H7MYCEpbi2Q==",
+  "dgSpecHash": "MpCNWhWf+4FfjzVZq3CGGjwN1z/Owl8IuL61Lmv2HDbnZg55YtknTsk2Llo6Dx7DaecO+48fMMd9h2u9gvfGZQ==",
   "success": true,
-  "projectFilePath": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/RestAPI/RestAPI.csproj",
+  "projectFilePath": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Consumer.Servic/Consumer.Servic.csproj",
   "expectedPackageFiles": [
     "/Users/nikolajhuynh/.nuget/packages/dnsclient/1.4.0/dnsclient.1.4.0.nupkg.sha512",
     "/Users/nikolajhuynh/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
