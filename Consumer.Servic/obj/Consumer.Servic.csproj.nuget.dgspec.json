@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Consumer.Service/Consumer.Service.csproj": {}
+    "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Consumer.Servic/Consumer.Servic.csproj": {}
   },
   "projects": {
-    "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Consumer.Service/Consumer.Service.csproj": {
+    "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Consumer.Servic/Consumer.Servic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Consumer.Service/Consumer.Service.csproj",
-        "projectName": "Consumer.Service",
-        "projectPath": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Consumer.Service/Consumer.Service.csproj",
+        "projectUniqueName": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Consumer.Servic/Consumer.Servic.csproj",
+        "projectName": "Consumer.Servic",
+        "projectPath": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Consumer.Servic/Consumer.Servic.csproj",
         "packagesPath": "/Users/nikolajhuynh/.nuget/packages/",
-        "outputPath": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Consumer.Service/obj/",
+        "outputPath": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Consumer.Servic/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/nikolajhuynh/.nuget/NuGet/NuGet.Config"
@@ -44,6 +44,20 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.2.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
