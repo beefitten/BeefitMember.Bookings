@@ -6,6 +6,6 @@ namespace Domain.Services.Fitness
     public interface IFitnessService
     {
         Task AddFitnessCenter(FitnessModel model);
-        Task<object> GetFitnessInformation(string name);
+        Task<FitnessModel> GetFitnessInformation(string name);
     }
 }

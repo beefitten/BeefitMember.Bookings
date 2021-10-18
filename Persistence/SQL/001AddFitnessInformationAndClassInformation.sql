@@ -1,7 +1,10 @@
 CREATE TABLE FitnessInformation
 (
     FitnessName varchar(50) PRIMARY KEY CLUSTERED,
-    Address varchar(50)
+    Address varchar(50),
+    OpeningHours varchar(100),
+    Email varchar(50),
+    PhoneNumber varchar(50)
 )
 
 CREATE TABLE ClassInformation

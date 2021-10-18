@@ -14,7 +14,7 @@ namespace Persistence.Repositories.Classes
             VALUES (@ClassId, @FitnessName, @ClassName, @ClassType, @IsClassFull, @MaxParticipants, @NumberOfParticipants, @ClassTimeStamp);";
 
             SqlCommand command = new SqlCommand(sql);
-            command.Parameters.AddWithValue("@ClassId", model.ClassId);
+            command.Parameters.AddWithValue("@ClassId", Guid.NewGuid());
             command.Parameters.AddWithValue("@FitnessName", model.FitnessName);
             command.Parameters.AddWithValue("@ClassName", model.ClassName);
             command.Parameters.AddWithValue("@ClassType", model.ClassType);
@@ -33,7 +33,7 @@ namespace Persistence.Repositories.Classes
             SqlCommand command = new SqlCommand(sql);
             command.Parameters.AddWithValue("@classId", classId);
 
-            return await Startup.QueryAsyncClassModel(command);
+            return await Startup.QueryClassModelAsync(command);
         }
 
         public Task<List<ClassReturnModel>> GetClasses(string fitnessName)
@@ -43,7 +43,7 @@ namespace Persistence.Repositories.Classes
             SqlCommand command = new SqlCommand(sql);
             command.Parameters.AddWithValue("@fitnessName", fitnessName);
 
-            return Startup.QueryAsyncAllClasses(command);
+            return Startup.QueryAllClassesAsync(command);
         }
 
         public async Task AddBookingOnClass(Guid classId,

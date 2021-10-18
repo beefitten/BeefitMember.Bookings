@@ -24,9 +24,8 @@ namespace RestAPI.Controllers
         }
         
         [HttpGet]
-        public async Task<object> Get(string name)
+        public async Task<FitnessModel> Get(string name)
         {
-            // Todo: Needs to make it send all relevant data back 
             return await _fitnessService.GetFitnessInformation(name);
         }
     }

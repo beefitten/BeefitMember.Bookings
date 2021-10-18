@@ -18,7 +18,7 @@ namespace Domain.Services.Fitness
             await _repository.AddFitnessCenter(model);
         }
 
-        public async Task<object> GetFitnessInformation(string name)
+        public async Task<FitnessModel> GetFitnessInformation(string name)
         {
             return await _repository.GetFitnessCenterInformation(name);
         }

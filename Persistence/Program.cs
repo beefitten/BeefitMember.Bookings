@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.IO;
 using System.Threading.Tasks;
 using Persistence.Repositories.Classes;
+using Persistence.Repositories.Fitness;
 
 namespace Persistence
 {
@@ -40,7 +41,7 @@ namespace Persistence
             }
             Console.ReadLine();
         }
-
+        
         private static async Task RunSqlScripts(SqlConnection connection)
         {
             // // Creating DB
@@ -49,13 +50,9 @@ namespace Persistence
             // await command.ExecuteNonQueryAsync();
                     
             // Run SQL
-            // var script = await File.ReadAllTextAsync(@"D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\SQL\001CreateFitnessTable.sql");
-            // var createTables = new SqlCommand(script, connection);
-            // await createTables.ExecuteNonQueryAsync();
-                    
-            var script2 = await File.ReadAllTextAsync(@"D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\SQL\002AddClassTable.sql");
-            var d = new SqlCommand(script2, connection);
-            await d.ExecuteNonQueryAsync();
+            var script = await File.ReadAllTextAsync(@"D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\SQL\001AddFitnessInformationAndClassInformation.sql");
+            var createTables = new SqlCommand(script, connection);
+            await createTables.ExecuteNonQueryAsync();
         }
 
         public static async Task InsertAsync(SqlCommand sqlCommand)
@@ -75,7 +72,7 @@ namespace Persistence
                     connection.Open();
                     sqlCommand.Connection = connection;
                     
-                    var response = await sqlCommand.ExecuteNonQueryAsync();
+                    await sqlCommand.ExecuteNonQueryAsync();
                     
                     connection.Close();
                 }
@@ -86,7 +83,7 @@ namespace Persistence
             }
         }
         
-        public static async Task<ClassReturnModel> QueryAsyncClassModel(SqlCommand sqlCommand)
+        public static async Task<ClassReturnModel> QueryClassModelAsync(SqlCommand sqlCommand)
         {
             try
             {
@@ -115,6 +112,7 @@ namespace Persistence
                         var maxParticipants = reader.GetValue(5).ToString();
                         var numberOfParticipants = reader.GetValue(6).ToString();
                         var timeStamp = reader.GetValue(7).ToString();
+                        
                         return new ClassReturnModel(new Guid(classId),
                             fitnessName,
                             className,
@@ -136,7 +134,7 @@ namespace Persistence
             return null;
         }
         
-        public static async Task<List<ClassReturnModel>> QueryAsyncAllClasses(SqlCommand sqlCommand)
+        public static async Task<List<ClassReturnModel>> QueryAllClassesAsync(SqlCommand sqlCommand)
         {
             try
             {
@@ -181,6 +179,51 @@ namespace Persistence
 
                     connection.Close();
                     return classes;
+                }
+            }
+            catch (SqlException e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+
+            return null;
+        }
+        
+        public static async Task<FitnessModel> QueryFitnessModelAsync(SqlCommand sqlCommand)
+        {
+            try
+            {
+                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder
+                {
+                    DataSource = "localhost",
+                    UserID = "SA",
+                    Password = "yourStrong(!)Password",
+                    InitialCatalog = "Fitness"
+                };
+
+                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
+                {
+                    connection.Open();
+                    sqlCommand.Connection = connection;
+
+                    var reader = await sqlCommand.ExecuteReaderAsync();
+                    
+                    while (await reader.ReadAsync())
+                    {
+                        var fitnessName = reader.GetValue(0).ToString();
+                        var address = reader.GetValue(1).ToString();
+                        var openingHours = reader.GetValue(2).ToString();
+                        var email = reader.GetValue(3).ToString();
+                        var phoneNumber = reader.GetValue(4).ToString();
+
+                        return new FitnessModel(fitnessName,
+                            address,
+                            openingHours,
+                            email,
+                            phoneNumber);
+                    }
+                    
+                    connection.Close();
                 }
             }
             catch (SqlException e)

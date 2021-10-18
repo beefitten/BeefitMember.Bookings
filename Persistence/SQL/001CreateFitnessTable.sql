@@ -1,6 +1,0 @@
--- CREATE TABLE FitnessInformation
--- (
---     Id int IDENTITY(1,1) PRIMARY KEY CLUSTERED,
---     FitnessName varchar(50),
---     Address varchar(50)
--- )

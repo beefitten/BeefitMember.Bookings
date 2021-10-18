@@ -17,13 +17,19 @@ namespace Consumer.Service.Handlers
 
         public async Task HandleClassBooking(BookClassEvent evt)
         {
-            Console.WriteLine("Booking is getting handled");
+            Console.WriteLine("Attempting to book on classId: " + evt.ClassId);
 
             var response = await _repository.GetClassInformation(evt.ClassId);
 
+            if (response == null)
+            {
+                Console.WriteLine("No class found with classId: " + evt.ClassId);
+                return;
+            }
+
             if (response.IsClassFull)
             {
-                Console.WriteLine("Class is full");
+                Console.WriteLine("Class " + response.ClassName + " is full");
                 return;
             }
             int newNumberOfParticipants = response.NumberOfParticipants + 1;
@@ -35,7 +41,7 @@ namespace Consumer.Service.Handlers
                     response.MaxParticipants, 
                     newNumberOfParticipants);
                 
-                Console.WriteLine("Booking added and class is full now!");
+                Console.WriteLine("Booking added and class " + response.ClassName + " is now full!");
             }
             else
             {
@@ -44,7 +50,7 @@ namespace Consumer.Service.Handlers
                     response.MaxParticipants, 
                     newNumberOfParticipants);
                 
-                Console.WriteLine("Booking added!");
+                Console.WriteLine("Class " + response.ClassName + " have a new booking!");
             }
         }
     }

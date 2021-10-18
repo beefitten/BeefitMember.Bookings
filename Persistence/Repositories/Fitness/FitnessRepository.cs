@@ -1,6 +1,5 @@
 using System.Data.SqlClient;
 using System.Threading.Tasks;
-using Persistence.Repositories.Classes;
 
 namespace Persistence.Repositories.Fitness
 {
@@ -8,23 +7,27 @@ namespace Persistence.Repositories.Fitness
     {
         public async Task AddFitnessCenter(FitnessModel model)
         {
-            var sql = "INSERT INTO [dbo].[FitnessInformation] (FitnessName, Address) VALUES (@FitnessName, @Address);";
+            var sql = @"INSERT INTO [dbo].[FitnessInformation] (FitnessName, Address, OpeningHours, Email, PhoneNumber) 
+                        VALUES (@FitnessName, @Address, @OpeningHours, @Email, @PhoneNumber);";
 
             SqlCommand command = new SqlCommand(sql);
             command.Parameters.AddWithValue("@FitnessName", model.FitnessName);
             command.Parameters.AddWithValue("@Address", model.Address);
+            command.Parameters.AddWithValue("@OpeningHours", model.OpeningHours);
+            command.Parameters.AddWithValue("@Email", model.Email);
+            command.Parameters.AddWithValue("@PhoneNumber", model.PhoneNumber);
 
             await Startup.InsertAsync(command);
         }
 
-        public async Task<string> GetFitnessCenterInformation(string name)
+        public async Task<FitnessModel> GetFitnessCenterInformation(string name)
         {
             var sql = "SELECT * FROM  [dbo].[FitnessInformation] WHERE FitnessName = @FitnessName;";
 
             SqlCommand command = new SqlCommand(sql);
             command.Parameters.AddWithValue("@FitnessName", name);
 
-            return "Not implemented"; //await Startup.QueryAsync(command);
+            return await Startup.QueryFitnessModelAsync(command);
         }
     }
 }
