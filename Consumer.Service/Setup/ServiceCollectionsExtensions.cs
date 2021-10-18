@@ -1,6 +1,7 @@
 using Consumer.Service.Handlers;
 using Consumer.Service.Handlers.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
+using Persistence.Repositories.Classes;
 
 namespace Consumer.Service.Setup
 {
@@ -8,7 +9,10 @@ namespace Consumer.Service.Setup
     {
         public static IServiceCollection AddBookingsHandler(this IServiceCollection services)
         {
-            services.AddSingleton<IBookingsHandler, BookingsHandler>();
+            services
+                .AddTransient<IBookingsHandler, BookingsHandler>()
+                .AddTransient<IClassesRepository, ClassesRepository>();
+            
             return services;
         }
     }

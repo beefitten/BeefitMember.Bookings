@@ -19,10 +19,10 @@ namespace Consumer.Service.Consumer
         public MqConsumer(IBookingsHandler bookingsHandler)
         {
             _bookingsHandler = bookingsHandler;
-           setupConnection();
+           SetupConnection();
         }
 
-        private void setupConnection()
+        private void SetupConnection()
         {
             var factory = new ConnectionFactory {HostName = "localhost"};
 
@@ -38,7 +38,6 @@ namespace Consumer.Service.Consumer
             _channel.BasicQos(0, 1, false);
 
             _connection.ConnectionShutdown += RabbitMQ_ShutdownConnection;
-
         }
 
         protected override Task ExecuteAsync(CancellationToken stoppingToken)

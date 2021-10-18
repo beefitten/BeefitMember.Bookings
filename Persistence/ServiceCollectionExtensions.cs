@@ -1,6 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
-using Persistence.Repositories.Bookings;
-using Persistence.Settings;
+using Persistence.Repositories.Classes;
+using Persistence.Repositories.Fitness;
 
 namespace Persistence
 {
@@ -9,10 +9,10 @@ namespace Persistence
         public static IServiceCollection AddPersistence(this IServiceCollection services)
         {
             services
-                .AddTransient<IDatabaseSettings, BookingsSettings>()
-                .AddTransient<IClassBookingsRepository, ClassBookingsRepository>();
+                .AddTransient<IFitnessRepository, FitnessRepository>()
+                .AddTransient<IClassesRepository, ClassesRepository>();
 
-            return services; 
+            return services;
         }
     }
 }

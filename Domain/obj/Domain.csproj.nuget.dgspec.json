@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/Domain.csproj": {}
+    "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/Domain.csproj": {
+    "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/Domain.csproj",
+        "projectUniqueName": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/Domain.csproj",
-        "packagesPath": "/Users/nikolajhuynh/.nuget/packages/",
-        "outputPath": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/obj/",
+        "projectPath": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Jonas\\.nuget\\packages\\",
+        "outputPath": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/nikolajhuynh/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -25,7 +25,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Persistence\\Persistence.csproj": {
+                "projectPath": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Persistence\\Persistence.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -69,7 +73,65 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Jonas\\.dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Persistence\\Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Persistence\\Persistence.csproj",
+        "projectName": "Persistence",
+        "projectPath": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\Jonas\\.nuget\\packages\\",
+        "outputPath": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\Jonas\\.dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

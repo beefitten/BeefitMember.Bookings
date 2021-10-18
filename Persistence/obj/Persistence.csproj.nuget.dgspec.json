@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/Persistence.csproj": {}
+    "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Persistence\\Persistence.csproj": {}
   },
   "projects": {
-    "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/Persistence.csproj": {
+    "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/Persistence.csproj",
+        "projectUniqueName": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/Persistence.csproj",
-        "packagesPath": "/Users/nikolajhuynh/.nuget/packages/",
-        "outputPath": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/obj/",
+        "projectPath": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\Jonas\\.nuget\\packages\\",
+        "outputPath": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/nikolajhuynh/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -38,21 +38,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "Microsoft.Extensions.Configuration": {
+            "System.Data.SqlClient": {
               "target": "Package",
-              "version": "[5.0.0, )"
-            },
-            "Microsoft.Extensions.Configuration.Json": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            },
-            "Microsoft.Extensions.DependencyInjection": {
-              "target": "Package",
-              "version": "[5.0.2, )"
-            },
-            "MongoDB.Driver": {
-              "target": "Package",
-              "version": "[2.13.2, )"
+              "version": "[4.8.3, )"
             }
           },
           "imports": [
@@ -70,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Jonas\\.dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

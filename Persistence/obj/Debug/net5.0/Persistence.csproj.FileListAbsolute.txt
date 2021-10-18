@@ -1,12 +1,25 @@
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/bin/Debug/net5.0/Persistence.deps.json
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/bin/Debug/net5.0/Persistence.dll
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/bin/Debug/net5.0/ref/Persistence.dll
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/bin/Debug/net5.0/Persistence.pdb
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/obj/Debug/net5.0/Persistence.csprojAssemblyReference.cache
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/obj/Debug/net5.0/Persistence.GeneratedMSBuildEditorConfig.editorconfig
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/obj/Debug/net5.0/Persistence.AssemblyInfoInputs.cache
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/obj/Debug/net5.0/Persistence.AssemblyInfo.cs
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/obj/Debug/net5.0/Persistence.csproj.CoreCompileInputs.cache
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/obj/Debug/net5.0/Persistence.dll
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/obj/Debug/net5.0/ref/Persistence.dll
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/obj/Debug/net5.0/Persistence.pdb
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\bin\Debug\net5.0\Persistence.exe
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\bin\Debug\net5.0\Persistence.deps.json
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\bin\Debug\net5.0\Persistence.runtimeconfig.json
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\bin\Debug\net5.0\Persistence.runtimeconfig.dev.json
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\bin\Debug\net5.0\Persistence.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\bin\Debug\net5.0\ref\Persistence.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\bin\Debug\net5.0\Persistence.pdb
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\bin\Debug\net5.0\System.Data.SqlClient.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\obj\Debug\net5.0\Persistence.csprojAssemblyReference.cache
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\obj\Debug\net5.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\obj\Debug\net5.0\Persistence.AssemblyInfoInputs.cache
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\obj\Debug\net5.0\Persistence.AssemblyInfo.cs
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\obj\Debug\net5.0\Persistence.csproj.CoreCompileInputs.cache
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\obj\Debug\net5.0\Persistence.csproj.CopyComplete
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\obj\Debug\net5.0\Persistence.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\obj\Debug\net5.0\ref\Persistence.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\obj\Debug\net5.0\Persistence.pdb
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\obj\Debug\net5.0\Persistence.genruntimeconfig.cache
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Persistence\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.xml

@@ -1,16 +1,18 @@
 using Domain.Services;
-using Domain.Services.Interfaces;
+using Domain.Services.Class;
+using Domain.Services.Fitness;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Domain
 {
     public static class ServiceCollectionExtensions 
     {
-        public static IServiceCollection AddMessageBus(this IServiceCollection services)
+        public static IServiceCollection AddDomain(this IServiceCollection services)
         {
             services.AddSingleton<IMessageBus, MessageBus>();
-            services.AddSingleton<IBookClassService, BookClassService>();
-            services.AddSingleton<IBookTrainerService, BookTrainerService>();
+            services.AddSingleton<IClassService, ClassService>();
+            services.AddTransient<IFitnessService, FitnessService>();
+            
             return services;
         }
     }

@@ -26,3 +26,39 @@
 /Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Consumer.Service/obj/Debug/net5.0/ref/Consumer.Service.dll
 /Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Consumer.Service/obj/Debug/net5.0/Consumer.Service.pdb
 /Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Consumer.Service/obj/Debug/net5.0/Consumer.Service.genruntimeconfig.cache
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\Persistence.exe
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\appsettings.Development.json
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\appsettings.json
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\Consumer.Service.exe
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\Consumer.Service.deps.json
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\Consumer.Service.runtimeconfig.json
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\Consumer.Service.runtimeconfig.dev.json
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\Consumer.Service.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\ref\Consumer.Service.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\Consumer.Service.pdb
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\RabbitMQ.Client.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\System.Data.SqlClient.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\Domain.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\Persistence.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\Domain.pdb
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\bin\Debug\net5.0\Persistence.pdb
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\obj\Debug\net5.0\Consumer.Service.csprojAssemblyReference.cache
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\obj\Debug\net5.0\Consumer.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\obj\Debug\net5.0\Consumer.Service.AssemblyInfoInputs.cache
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\obj\Debug\net5.0\Consumer.Service.AssemblyInfo.cs
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\obj\Debug\net5.0\Consumer.Service.csproj.CoreCompileInputs.cache
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\obj\Debug\net5.0\Consumer.Service.csproj.CopyComplete
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\obj\Debug\net5.0\Consumer.Service.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\obj\Debug\net5.0\ref\Consumer.Service.dll
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\obj\Debug\net5.0\Consumer.Service.pdb
+D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Consumer.Service\obj\Debug\net5.0\Consumer.Service.genruntimeconfig.cache

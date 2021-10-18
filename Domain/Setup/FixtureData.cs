@@ -9,7 +9,7 @@ namespace Domain.Setup
         public FixtureData()
         {
             ServiceProvider = new ServiceCollection()
-                .AddMessageBus()
+                .AddDomain()
                 .BuildServiceProvider();
         }
     }

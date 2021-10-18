@@ -2,7 +2,6 @@ using System;
 using System.Text;
 using System.Threading.Tasks;
 using Domain.Events;
-using Domain.Services.Interfaces;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 
@@ -18,7 +17,7 @@ namespace Domain.Services
 
         public async Task SendClassBookingMessage(BookClassEvent message)
         {
-            if (ConnectionExists().Result)
+            if (ConnectionExists())
             {
                 using (var channel = _connection.CreateModel())
                 {
@@ -35,7 +34,7 @@ namespace Domain.Services
         
         public async Task SendTrainerBookingMessage(BookTrainerEvent message)
         {
-            if (ConnectionExists().Result)
+            if (ConnectionExists())
             {
                 using (var channel = _connection.CreateModel())
                 {
@@ -55,7 +54,7 @@ namespace Domain.Services
             throw new System.NotImplementedException();
         }
 
-        private async Task CreateConnection()
+        private void CreateConnection()
         {
             try
             {
@@ -71,7 +70,7 @@ namespace Domain.Services
             }
         }
 
-        private async Task<bool> ConnectionExists()
+        private bool ConnectionExists()
         {
             if (_connection != null)
                 return true;
