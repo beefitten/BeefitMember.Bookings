@@ -2,12 +2,9 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 using Domain.Events;
-using Domain.Services;
 using Domain.Services.Class;
-using Domain.Setup;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.DependencyInjection;
-using Persistence.Repositories.Classes;
+using Persistence.Repositories.Classes.Models;
 
 namespace RestAPI.Controllers
 {
@@ -32,17 +29,32 @@ namespace RestAPI.Controllers
         
         [HttpPost]
         [Route("/bookClass")]
-        public async Task<HttpStatusCode> BookClass(BookClassEvent evt)
+        public HttpStatusCode BookClass(BookClassEvent evt)
         {
-            await _classService.BookClass(evt);
+            _classService.BookClass(evt);
             return HttpStatusCode.OK;
         }
         
         [HttpGet]
-        [Route("/getClasses")]
+        [Route("/getClass/{classId}")]
+        public async Task<ClassReturnModel> GetClass(string classId)
+        {
+            return await _classService.GetClass(classId);
+        }
+        
+        [HttpGet]
+        [Route("/getClasses/{fitnessName}")]
         public async Task<List<ClassReturnModel>> GetAllClasses(string fitnessName)
         {
             return await _classService.GetClasses(fitnessName);
         }
+
+        [HttpGet]
+        [Route("/getUserClasses/{userId}")]
+        public async Task<List<ClassReturnModel>> GetUserClasses(string userId)
+        {
+            return await _classService.GetUserClasses(userId);
+        }
+
     }
 }

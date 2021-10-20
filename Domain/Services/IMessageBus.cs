@@ -5,7 +5,7 @@ namespace Domain.Services
 {
     public interface IMessageBus
     {
-        Task SendClassBookingMessage(BookClassEvent message);
+        void SendClassBookingMessage(BookClassEvent message);
         Task SendTrainerBookingMessage(BookTrainerEvent message);
     }
 }

@@ -15,7 +15,7 @@ namespace Domain.Services
             CreateConnection();
         }
 
-        public async Task SendClassBookingMessage(BookClassEvent message)
+        public void SendClassBookingMessage(BookClassEvent message)
         {
             if (ConnectionExists())
             {

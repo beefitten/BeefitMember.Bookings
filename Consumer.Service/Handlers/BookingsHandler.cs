@@ -27,28 +27,29 @@ namespace Consumer.Service.Handlers
                 return;
             }
 
-            if (response.IsClassFull)
+            if (response.IsFull)
             {
                 Console.WriteLine("Class " + response.ClassName + " is full");
                 return;
             }
+            
             int newNumberOfParticipants = response.NumberOfParticipants + 1;
 
             if (newNumberOfParticipants == response.MaxParticipants)
             {
                 await _repository.AddBookingOnClass(evt.ClassId,
-                    true,
-                    response.MaxParticipants, 
-                    newNumberOfParticipants);
+                    true, 
+                    newNumberOfParticipants,
+                    evt.Email);
                 
                 Console.WriteLine("Booking added and class " + response.ClassName + " is now full!");
             }
             else
             {
                 await _repository.AddBookingOnClass(evt.ClassId, 
-                    false,
-                    response.MaxParticipants, 
-                    newNumberOfParticipants);
+                    false, 
+                    newNumberOfParticipants,
+                    evt.Email);
                 
                 Console.WriteLine("Class " + response.ClassName + " have a new booking!");
             }

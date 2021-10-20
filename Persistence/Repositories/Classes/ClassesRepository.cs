@@ -1,67 +1,154 @@
 using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using System.Net;
 using System.Threading.Tasks;
+using MongoDB.Bson;
+using MongoDB.Driver;
+using Persistence.Repositories.Classes.Models;
+using Persistence.Settings;
 
 namespace Persistence.Repositories.Classes
 {
     public class ClassesRepository : IClassesRepository
     {
-        public async Task AddClass(ClassModel model)
+        private readonly IMongoCollection<ClassMongoModel> _classesCollection;
+        
+        public ClassesRepository(IDatabaseSettings settings)
         {
-            var sql = @"INSERT INTO [dbo].[ClassInformation] 
-            (ClassId, FitnessName, ClassName, ClassType, IsClassFull, MaxParticipants, NumberOfParticipants, ClassTimeStamp) 
-            VALUES (@ClassId, @FitnessName, @ClassName, @ClassType, @IsClassFull, @MaxParticipants, @NumberOfParticipants, @ClassTimeStamp);";
+            var client = new MongoClient(settings.ConnectionString);
+            var database = client.GetDatabase(settings.DatabaseName);
 
-            SqlCommand command = new SqlCommand(sql);
-            command.Parameters.AddWithValue("@ClassId", Guid.NewGuid());
-            command.Parameters.AddWithValue("@FitnessName", model.FitnessName);
-            command.Parameters.AddWithValue("@ClassName", model.ClassName);
-            command.Parameters.AddWithValue("@ClassType", model.ClassType);
-            command.Parameters.AddWithValue("@IsClassFull", false);
-            command.Parameters.AddWithValue("@MaxParticipants", model.MaxParticipants);
-            command.Parameters.AddWithValue("@NumberOfParticipants", model.NumberOfParticipants);
-            command.Parameters.AddWithValue("@ClassTimeStamp", model.ClassTimeStamp);
+            _classesCollection = database.GetCollection<ClassMongoModel>(settings.CollectionName);
             
-            await Startup.InsertAsync(command);
+            var participantsIndex = Builders<ClassMongoModel>
+                .IndexKeys.Ascending(p => p.Participants);
+            
+            var options = new CreateIndexOptions { Unique = true };
+            
+            _classesCollection.Indexes.CreateOne(participantsIndex, options);
         }
-
-        public async Task<ClassReturnModel> GetClassInformation(Guid classId)
+        
+        public async Task<HttpStatusCode> AddClass(ClassModel model)
         {
-            var sql = "SELECT * FROM [dbo].[ClassInformation] WHERE classId = @classId;";
+            if (model == null)
+                throw new Exception("Model cannot be null!");
 
-            SqlCommand command = new SqlCommand(sql);
-            command.Parameters.AddWithValue("@classId", classId);
-
-            return await Startup.QueryClassModelAsync(command);
+            try
+            {
+                var classMongoModel = new ClassMongoModel()
+                {
+                    ClassId = Guid.NewGuid().ToString(),
+                    FitnessName = model.FitnessName,
+                    ClassName = model.ClassName,
+                    ClassType = model.ClassType,
+                    ClassImage = model.ClassImage,
+                    IsFull = false,
+                    MaxParticipants = model.MaxParticipants,
+                    NumberOfParticipants = 0,
+                    TimeStart = model.TimeStart,
+                    TimeEnd = model.TimeEnd,
+                    Participants = new List<string>(),
+                    Location = model.Location
+                };
+                
+                await _classesCollection.InsertOneAsync(classMongoModel);
+                return HttpStatusCode.OK;
+            }
+            catch (Exception e)
+            {
+                return HttpStatusCode.Conflict;
+            }
         }
 
-        public Task<List<ClassReturnModel>> GetClasses(string fitnessName)
+        public async Task<ClassReturnModel> GetClassInformation(string classId)
         {
-            var sql = "SELECT * FROM [dbo].[ClassInformation] WHERE fitnessName = @fitnessName;";
+            if (classId == null)
+                throw new Exception("ClassId cannot be null!");
 
-            SqlCommand command = new SqlCommand(sql);
-            command.Parameters.AddWithValue("@fitnessName", fitnessName);
+            var model = await _classesCollection
+                .Find<ClassMongoModel>(item => item.ClassId == classId)
+                .FirstOrDefaultAsync();
 
-            return Startup.QueryAllClassesAsync(command);
+            if (model == null)
+                throw new Exception("Class not found!");
+
+            return new ClassReturnModel(
+                model.ClassId,
+                model.FitnessName,
+                model.ClassImage,
+                model.ClassType,
+                model.ClassImage,
+                model.IsFull,
+                model.MaxParticipants,
+                model.NumberOfParticipants,
+                model.TimeStart,
+                model.TimeEnd,
+                model.Participants,
+                model.Location);
         }
 
-        public async Task AddBookingOnClass(Guid classId,
+        public async Task<List<ClassReturnModel>> GetClasses(string fitnessName)
+        {
+            var model = await _classesCollection
+                .Find(item => item.FitnessName == fitnessName)
+                .ToListAsync();
+
+            var classReturnModel = new List<ClassReturnModel>();
+
+            foreach (var item in model)
+            {
+                var classItem = new ClassReturnModel(
+                        item.ClassId,
+                        item.FitnessName,
+                        item.ClassImage,
+                        item.ClassType,
+                        item.ClassImage,
+                        item.IsFull,
+                        item.MaxParticipants,
+                        item.NumberOfParticipants,
+                        item.TimeStart,
+                        item.TimeEnd,
+                        item.Participants,
+                        item.Location);
+
+                classReturnModel.Add(classItem);
+            }
+
+            return classReturnModel;
+        }
+
+        public async Task<List<ClassReturnModel>> GetUserClasses(string userId)
+        {
+            var list = (await _classesCollection.Indexes.ListAsync()).ToList<BsonDocument>();
+            Console.WriteLine(list);
+            
+            var model = await _classesCollection
+                .Find(item => item.Participants
+                    .Find(x => x.Contains(userId)) == userId)
+                .ToListAsync();
+            
+            return new List<ClassReturnModel>();
+        }
+
+        public async Task AddBookingOnClass(
+            string classId,
             bool isClassFull, 
-            int maxParticipants, 
-            int numberOfParticipants)
+            int numberOfParticipants,
+            string email)
         {
-            var sql = @"UPDATE [dbo].[ClassInformation] 
-                        SET IsClassFull = @IsClassFull, MaxParticipants = @MaxParticipants, NumberOfParticipants = @NumberOfParticipants 
-                        WHERE classId = @classId;";
+            var model = await _classesCollection
+                .Find<ClassMongoModel>(item => item.ClassId == classId)
+                .FirstOrDefaultAsync();
             
-            SqlCommand command = new SqlCommand(sql);
-            command.Parameters.AddWithValue("@classId", classId);
-            command.Parameters.AddWithValue("@IsClassFull", isClassFull);
-            command.Parameters.AddWithValue("@MaxParticipants", maxParticipants);
-            command.Parameters.AddWithValue("@NumberOfParticipants", numberOfParticipants);
+            model.Participants.Add(email);
 
-            await Startup.InsertAsync(command);
+            var filter = Builders<ClassMongoModel>.Filter.Eq("ClassId", classId);
+            var update = Builders<ClassMongoModel>.Update
+                .Set("Participants", model.Participants)
+                .Set("IsFull", isClassFull)
+                .Set("NumberOfParticipants", numberOfParticipants);
+
+            await _classesCollection.UpdateOneAsync(filter, update);
         }
     }
 }

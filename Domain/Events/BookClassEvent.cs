@@ -4,6 +4,7 @@ namespace Domain.Events
 {
     public class BookClassEvent
     {
-        public Guid ClassId { get; set; }
+        public string ClassId { get; set; }
+        public string Email { get; set; }
     }
 }
