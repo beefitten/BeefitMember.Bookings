@@ -1,3 +1,4 @@
+using System;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -24,7 +25,10 @@ namespace Consumer.Service.Consumer
 
         private void SetupConnection()
         {
-            var factory = new ConnectionFactory {HostName = "localhost"};
+            var factory = new ConnectionFactory
+            {
+                Uri = new Uri("amqps://kxotdimk:BBCGMZtps1mW7kOqBru4qvvP5BxnfYU_@goose.rmq2.cloudamqp.com/kxotdimk")
+            };
 
             _connection = factory.CreateConnection();
             _channel = _connection.CreateModel();

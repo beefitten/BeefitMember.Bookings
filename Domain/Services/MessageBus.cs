@@ -58,9 +58,9 @@ namespace Domain.Services
         {
             try
             {
-                var factor = new ConnectionFactory()
+                var factor = new ConnectionFactory
                 {
-                    HostName = "localhost"
+                    Uri = new Uri("amqps://kxotdimk:BBCGMZtps1mW7kOqBru4qvvP5BxnfYU_@goose.rmq2.cloudamqp.com/kxotdimk")
                 };
                 _connection = factor.CreateConnection();
             }
