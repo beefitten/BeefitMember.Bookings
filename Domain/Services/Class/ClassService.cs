@@ -1,7 +1,10 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Domain.Events;
+using MongoDB.Bson;
 using Persistence.Repositories.Classes;
+using Persistence.Repositories.Classes.Models;
 
 namespace Domain.Services.Class
 {
@@ -21,14 +24,24 @@ namespace Domain.Services.Class
             await _repository.AddClass(model);
         }
 
-        public async Task BookClass(BookClassEvent evt)
+        public void BookClass(BookClassEvent evt)
         {
-            await _messageBus.SendClassBookingMessage(evt);
+            _messageBus.SendClassBookingMessage(evt);
+        }
+
+        public async Task<ClassReturnModel> GetClass(string classId)
+        {
+            return await _repository.GetClassInformation(classId);
         }
 
         public async Task<List<ClassReturnModel>> GetClasses(string fitnessName)
         {
             return await _repository.GetClasses(fitnessName);
+        }
+
+        public async Task<List<ClassReturnModel>> GetUserClasses(string userId)
+        {
+            return await _repository.GetUserClasses(userId);
         }
     }
 }

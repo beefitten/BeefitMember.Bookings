@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Persistence.Setup;
 
 namespace Consumer.Service
 {
@@ -20,6 +21,7 @@ namespace Consumer.Service
         {
             services.AddHostedService<MqConsumer>();
             services.AddBookingsHandler();
+            services.AddPersistence();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

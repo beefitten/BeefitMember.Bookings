@@ -1,6 +1,5 @@
 using Domain.Services;
 using Domain.Services.Class;
-using Domain.Services.Fitness;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Domain
@@ -11,7 +10,7 @@ namespace Domain
         {
             services.AddSingleton<IMessageBus, MessageBus>();
             services.AddSingleton<IClassService, ClassService>();
-            services.AddTransient<IFitnessService, FitnessService>();
+            //services.AddTransient<IFitnessService, FitnessService>();
             
             return services;
         }

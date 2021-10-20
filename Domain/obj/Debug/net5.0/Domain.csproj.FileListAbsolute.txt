@@ -47,6 +47,5 @@ D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\obj\Debug\net5.0\
 D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\obj\Debug\net5.0\Domain.dll
 D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\obj\Debug\net5.0\ref\Domain.dll
 D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\obj\Debug\net5.0\Domain.pdb
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\bin\Debug\net5.0\Persistence.exe
 D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\bin\Debug\net5.0\Persistence.dll
 D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\bin\Debug\net5.0\Persistence.pdb

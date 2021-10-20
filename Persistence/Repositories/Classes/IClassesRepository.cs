@@ -1,18 +1,22 @@
 using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Threading.Tasks;
+using MongoDB.Bson;
+using Persistence.Repositories.Classes.Models;
 
 namespace Persistence.Repositories.Classes
 {
     public interface IClassesRepository
     {
-        Task AddClass(ClassModel model);
-        Task<ClassReturnModel> GetClassInformation(Guid classId);
+        Task<HttpStatusCode> AddClass(ClassModel model);
+        Task<ClassReturnModel> GetClassInformation(string classId);
         Task<List<ClassReturnModel>> GetClasses(string fitnessName);
-
-        Task AddBookingOnClass(Guid classId,
+        Task<List<ClassReturnModel>> GetUserClasses(string userId);
+        Task AddBookingOnClass(
+            string classId,
             bool isClassFull,
-            int maxParticipants,
-            int numberOfParticipants);
+            int numberOfParticipants,
+            string email);
     }
 }
