@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
-using MongoDB.Bson;
 using MongoDB.Driver;
 using Persistence.Repositories.Classes.Models;
 using Persistence.Settings;
@@ -19,13 +18,8 @@ namespace Persistence.Repositories.Classes
             var database = client.GetDatabase(settings.DatabaseName);
 
             _classesCollection = database.GetCollection<ClassMongoModel>(settings.CollectionName);
-            
-            var participantsIndex = Builders<ClassMongoModel>
-                .IndexKeys.Ascending(p => p.Participants);
-            
-            var options = new CreateIndexOptions { Unique = true };
-            
-            _classesCollection.Indexes.CreateOne(participantsIndex, options);
+
+            _classesCollection.Indexes.CreateOne(Builders<ClassMongoModel>.IndexKeys.Text(x=>x.Participants));
         }
         
         public async Task<HttpStatusCode> AddClass(ClassModel model)
@@ -119,15 +113,30 @@ namespace Persistence.Repositories.Classes
 
         public async Task<List<ClassReturnModel>> GetUserClasses(string userId)
         {
-            var list = (await _classesCollection.Indexes.ListAsync()).ToList<BsonDocument>();
-            Console.WriteLine(list);
+            var response = await _classesCollection.Find(Builders<ClassMongoModel>.Filter.Text(userId)).ToListAsync();
+
+            var classModel = new List<ClassReturnModel>();
+
+            foreach (var item in response)
+            {
+                var classReturnModel = new ClassReturnModel(
+                    item.ClassId,
+                    item.FitnessName,
+                    item.ClassName,
+                    item.ClassType,
+                    item.ClassImage,
+                    item.IsFull,
+                    item.MaxParticipants,
+                    item.NumberOfParticipants,
+                    item.TimeStart,
+                    item.TimeEnd,
+                    item.Participants,
+                    item.Location);
+                
+                classModel.Add(classReturnModel);
+            }
             
-            var model = await _classesCollection
-                .Find(item => item.Participants
-                    .Find(x => x.Contains(userId)) == userId)
-                .ToListAsync();
-            
-            return new List<ClassReturnModel>();
+            return classModel;
         }
 
         public async Task AddBookingOnClass(
