@@ -148,9 +148,12 @@ namespace Persistence.Repositories.Classes
             var model = await _classesCollection
                 .Find<ClassMongoModel>(item => item.ClassId == classId)
                 .FirstOrDefaultAsync();
-            
-            model.Participants.Add(email);
 
+            if (model.Participants.Contains(email))
+                return;
+
+            model.Participants.Add(email);
+            
             var filter = Builders<ClassMongoModel>.Filter.Eq("ClassId", classId);
             var update = Builders<ClassMongoModel>.Update
                 .Set("Participants", model.Participants)
