@@ -19,7 +19,8 @@ namespace Persistence.Repositories.Classes
 
             _classesCollection = database.GetCollection<ClassMongoModel>(settings.CollectionName);
 
-            _classesCollection.Indexes.CreateOne(Builders<ClassMongoModel>.IndexKeys.Text(x=>x.Participants));
+            // var options = new CreateIndexOptions{Unique = false};
+            // _classesCollection.Indexes.CreateOne(Builders<ClassMongoModel>.IndexKeys.Text(x=>x.Participants));
         }
         
         public async Task<HttpStatusCode> AddClass(ClassModel model)

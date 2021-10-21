@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Threading.Tasks;
 using Domain.Events;
 using MongoDB.Bson;
@@ -19,9 +20,9 @@ namespace Domain.Services.Class
             _repository = repository;
         }
 
-        public async Task AddClass(ClassModel model)
+        public async Task<HttpStatusCode> AddClass(ClassModel model)
         {
-            await _repository.AddClass(model);
+            return await _repository.AddClass(model);
         }
 
         public void BookClass(BookClassEvent evt)
