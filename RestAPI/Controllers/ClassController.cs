@@ -23,8 +23,7 @@ namespace RestAPI.Controllers
         [Route("/addClass")]
         public async Task<HttpStatusCode> BookClass(ClassModel model)
         {
-            await _classService.AddClass(model);
-            return HttpStatusCode.OK;
+            return await _classService.AddClass(model);
         }
         
         [HttpPost]
