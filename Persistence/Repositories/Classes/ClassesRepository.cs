@@ -95,7 +95,7 @@ namespace Persistence.Repositories.Classes
                 var classItem = new ClassReturnModel(
                         item.ClassId,
                         item.FitnessName,
-                        item.ClassImage,
+                        item.ClassName,
                         item.ClassType,
                         item.ClassImage,
                         item.IsFull,
