@@ -34,6 +34,14 @@ namespace RestAPI.Controllers
             return HttpStatusCode.OK;
         }
         
+        [HttpPost]
+        [Route("/deleteBooking")]
+        public HttpStatusCode DeleteBooking(BookClassEvent evt)
+        {
+            _classService.DeleteBooking(evt);
+            return HttpStatusCode.OK;
+        }
+        
         [HttpGet]
         [Route("/getClass/{classId}")]
         public async Task<ClassReturnModel> GetClass(string classId)
@@ -55,5 +63,33 @@ namespace RestAPI.Controllers
             return await _classService.GetUserClasses(userId);
         }
 
+        [HttpGet]
+        [Route("/getRandomAppointments")]
+        public List<AppointmentsModel> GetRandomAppointments()
+        {
+            return Appointments.GenerateData();
+        }
+
+        private class Appointments
+        {
+            public static List<AppointmentsModel> GenerateData()
+            {
+                var appointments = new List<AppointmentsModel>();
+
+                var appointment = new AppointmentsModel(
+                    "Personal Training Session",
+                    "https://www.myfooddiary.com/blog/asset/2419/personal_training_session.jpg",
+                    "On thursday at 15:40");
+                
+                appointments.Add(appointment);
+                appointments.Add(appointment);
+                appointments.Add(appointment);
+                appointments.Add(appointment);
+
+                return appointments;
+            }
+        }
+        
+        public record AppointmentsModel(string Headline, string Image, string Date);
     }
 }

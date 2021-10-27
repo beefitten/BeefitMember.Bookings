@@ -23,7 +23,7 @@ namespace Persistence.Repositories.Classes
             // _classesCollection.Indexes.CreateOne(Builders<ClassMongoModel>.IndexKeys.Text(x=>x.Participants));
         }
         
-        public async Task<HttpStatusCode> AddClass(ClassModel model)
+        public async Task<HttpStatusCode> AddClass(ClassModel model, Guid classId)
         {
             if (model == null)
                 throw new Exception("Model cannot be null!");
@@ -32,7 +32,7 @@ namespace Persistence.Repositories.Classes
             {
                 var classMongoModel = new ClassMongoModel()
                 {
-                    ClassId = Guid.NewGuid().ToString(),
+                    ClassId = classId.ToString(),
                     FitnessName = model.FitnessName,
                     ClassName = model.ClassName,
                     ClassType = model.ClassType,
@@ -70,7 +70,7 @@ namespace Persistence.Repositories.Classes
             return new ClassReturnModel(
                 model.ClassId,
                 model.FitnessName,
-                model.ClassImage,
+                model.ClassName,
                 model.ClassType,
                 model.ClassImage,
                 model.IsFull,
@@ -160,6 +160,30 @@ namespace Persistence.Repositories.Classes
                 .Set("Participants", model.Participants)
                 .Set("IsFull", isClassFull)
                 .Set("NumberOfParticipants", numberOfParticipants);
+
+            await _classesCollection.UpdateOneAsync(filter, update);
+        }
+
+        public async Task DeleteBooking(string classId, string email)
+        {
+            var model = await _classesCollection
+                .Find<ClassMongoModel>(item => item.ClassId == classId)
+                .FirstOrDefaultAsync();
+
+            if (model.Participants.Contains(email))
+            {
+                model.Participants.Remove(email);
+            }
+            else
+            {
+                return;
+            }
+
+            var filter = Builders<ClassMongoModel>.Filter.Eq("ClassId", classId);
+            var update = Builders<ClassMongoModel>.Update
+                .Set("Participants", model.Participants)
+                .Set("IsFull", model.IsFull = false)
+                .Set("NumberOfParticipants", model.NumberOfParticipants - 1);
 
             await _classesCollection.UpdateOneAsync(filter, update);
         }

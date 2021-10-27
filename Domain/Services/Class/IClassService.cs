@@ -10,6 +10,7 @@ namespace Domain.Services.Class
     {
         Task<HttpStatusCode> AddClass(ClassModel model);
         void BookClass(BookClassEvent evt);
+        Task DeleteBooking(BookClassEvent evt);
         Task<ClassReturnModel> GetClass(string classId);
         Task<List<ClassReturnModel>> GetClasses(string fitnessName);
         Task<List<ClassReturnModel>> GetUserClasses(string userId);

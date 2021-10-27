@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 using Domain.Events;
-using MongoDB.Bson;
+using Domain.Setup;
 using Persistence.Repositories.Classes;
 using Persistence.Repositories.Classes.Models;
 
@@ -13,21 +13,36 @@ namespace Domain.Services.Class
     {
         private readonly IMessageBus _messageBus;
         private readonly IClassesRepository _repository;
+        private readonly IFirebase _firebase;
         
-        public ClassService(IMessageBus messageBus, IClassesRepository repository)
+        public ClassService(
+            IMessageBus messageBus, 
+            IClassesRepository repository, 
+            IFirebase firebase)
         {
             _messageBus = messageBus;
             _repository = repository;
+            _firebase = firebase;
         }
 
         public async Task<HttpStatusCode> AddClass(ClassModel model)
         {
-            return await _repository.AddClass(model);
+            var classId = Guid.NewGuid();
+
+            await _firebase.AddClass(classId);
+            
+            return await _repository.AddClass(model, classId);
         }
 
         public void BookClass(BookClassEvent evt)
         {
             _messageBus.SendClassBookingMessage(evt);
+        }
+
+        public Task DeleteBooking(BookClassEvent evt)
+        {
+            _repository.DeleteBooking(evt.ClassId, evt.Email);
+            return _firebase.DeleteBooking(evt.ClassId, evt.Email);
         }
 
         public async Task<ClassReturnModel> GetClass(string classId)
