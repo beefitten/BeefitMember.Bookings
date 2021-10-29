@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "beefitmemberbookings",
+  "private_key_id": "8e85a60135336d48fb3178e619301b9fe6f4e776",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDuj1an42ECV/RK\n+AgdkdDv8RylWkD0TG6hp8Bjm8+qrEGtxrpJXGJGUxiTFmiB+M2gPriGIhDrtpzc\ncVG5M5Zt+lfHZCGSX5dtETZMFTtIj8PLF3aX2yGOIjkNPEktY4jIcOFV5+Rm0nK9\nQP+/tzGgvpFCB4aa+2ucxHe1Puzg/kmIgcK85X5l1M6xjY1naXH4oY4Xh6RfJNsY\noaRQFlwH3v8gKBz/UPSTWXorejCMepxlPNLue027c8YNyP6G/h3nQWkGDfA1clbI\nXzUvXmJYTw97T1leSVSL8oJRWJs+5rMTMi4hz5yzfjBI1GW5SKQpDLaFEdKIRSZT\nAUEEVSjtAgMBAAECggEAIrEYlnikAl29CmvwbjBm1IXZNxidaol06zBEc5fUhsrf\nEEDelU2IgxaRc85l60S9zmhgmCz7DfQz8oDONCMS5LJrsnTWxvz8veErZrwNr3ss\nq2uhlOrKgetrJYgXUjDv0spLkp0S43sGMYxyxLQE1Q3xfMswYXhfiWAu0l4wv3Uj\nXziiKWaHM3AqBTbOuYSwlV9H8+mFWOgrlYFD2b+BO77INzBmqq61lWEzMDF7KSw7\nc/PlsMl72iddLPJVu/gmK5jM+rSAjxx3bmY3JBotDzGhROaObIUBjdzLQLIJpJM3\nr4/7z2cD3b2izppqUrmkMEn66y9y+NIu5Vz4cQj2hwKBgQD+eLgDq4fZDujOgGdH\nOx5h+zOqxutza/sXdPmeComxW32DBaRl7Z4wQAcYdMihNJY93VRW4QS+6D/12qXt\nO6xcWTaWhRRddlKD86jI/54VUKa0BdyVOxNeluxOB0IXs2bIsb7el4KpaBZR7TK0\nRWg3vebKWpAywRLuz3oQyYzMcwKBgQDv/idR+98uUZtkQMKsuFYE4ZdhMcLFL1hU\nBs4JcOFfrw2VyJkuV/9JgCU572gEoNmKdRGvillo65Ykna5ugfHRWyQmeLcxOWU+\nuOTZ2hwAHdcAqtbov0oNCMxQv8I9zAYbU9qpjhDa1KOiIPzgEP0E/dvtjvGTvLB1\nVVt9lus9HwKBgFyUSMY1CphifzpZprlYfcZB4Ns5wYFdgJ1ZFlN0HAIlefVIATaA\nC3QcZzhzjGZxvlNFiaCN/u8BifuFD6bOdfenEWATjIQwPvb4l6iArt+sVunZ1BWK\nx5I7MD93DomW4EcVu4456vR9BNnLhQ3mznKxKRznc9yzN5MgcpVW7l2XAoGAfJrd\n+YAnyZnPb4b8TMdMyi4C9hDrCoxhdQcvdNFqAs8V454Kgnhn8Naa/XCi9jw5ltzf\nuN/BOmuPQiWoinHnhwamR19H5kPhoGZJVB8diKX1msAY4zFmlkvqIUbe6E0FIq0w\nC/baI3RiHWy5PvEzHaNczAP6w/UlPVZ7MULpkosCgYAjHqMG8Rod6EsarTHkNwk+\noxFMb9PSFC6CFKLtf9E+n9kVkRYWY3ta5bLCPRDB8qpN8JKEbM//XLePXeBM8F10\n9FuXNXQc2MeTpvuKWQKaDeaUlzXfnWbuLXfb2KZ+XywXm7Wv6LlDYqiWmOMVTa9J\nNFrxmqSWBsp0WTlJEUDTmA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-7yefa@beefitmemberbookings.iam.gserviceaccount.com",
+  "client_id": "110078775887557592635",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-7yefa%40beefitmemberbookings.iam.gserviceaccount.com"
+}
