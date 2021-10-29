@@ -78,7 +78,7 @@ namespace RestAPI.Controllers
 
                 var appointment = new AppointmentsModel(
                     "Personal Training Session",
-                    "https://live.staticflickr.com/8025/7107352459_3bd62fcdea_k.jpg",
+                    "https://live.staticflickr.com/8044/8376983917_9182dcc993_b.jpg",
                     "On thursday at 15:40");
                     
                 var appointment2 = new AppointmentsModel(
@@ -88,7 +88,7 @@ namespace RestAPI.Controllers
                 
                 var appointment3 = new AppointmentsModel(
                     "Personal Training Session",
-                    "https://live.staticflickr.com/8025/7107352459_3bd62fcdea_k.jpg",
+                    "https://live.staticflickr.com/8044/8376983917_9182dcc993_b.jpg",
                     "On 22/10/2021 at 10:00");
                 
                 var appointment4 = new AppointmentsModel(
