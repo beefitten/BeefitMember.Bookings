@@ -80,11 +80,26 @@ namespace RestAPI.Controllers
                     "Personal Training Session",
                     "https://www.myfooddiary.com/blog/asset/2419/personal_training_session.jpg",
                     "On thursday at 15:40");
+                    
+                var appointment2 = new AppointmentsModel(
+                    "Training with your buddy",
+                    "https://live.staticflickr.com/8136/29522769343_5d7615df18_b.jpg",
+                    "On friday at 10:00");
+                
+                var appointment3 = new AppointmentsModel(
+                    "Personal Training Session",
+                    "https://live.staticflickr.com/8025/7107352459_3bd62fcdea_k.jpg",
+                    "On 22/10/2021 at 10:00");
+                
+                var appointment4 = new AppointmentsModel(
+                    "Personal Training Session",
+                    "https://live.staticflickr.com/8025/7107352459_3bd62fcdea_k.jpg",
+                    "On 27/10/2021 at 10:00");
                 
                 appointments.Add(appointment);
-                appointments.Add(appointment);
-                appointments.Add(appointment);
-                appointments.Add(appointment);
+                appointments.Add(appointment2);
+                appointments.Add(appointment3);
+                appointments.Add(appointment4);
 
                 return appointments;
             }
