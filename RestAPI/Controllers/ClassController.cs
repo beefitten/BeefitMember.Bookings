@@ -83,7 +83,7 @@ namespace RestAPI.Controllers
                     
                 var appointment2 = new AppointmentsModel(
                     "Personal Training Session",
-                    "https://live.staticflickr.com/8152/6960177118_a437aba21b_k.jpg",
+                    "https://live.staticflickr.com/4078/4914138831_83c09bc311_m.jpg",
                     "On friday at 10:00");
                 
                 var appointment3 = new AppointmentsModel(
@@ -93,7 +93,7 @@ namespace RestAPI.Controllers
                 
                 var appointment4 = new AppointmentsModel(
                     "Personal Training Session",
-                    "https://live.staticflickr.com/8152/6960177118_a437aba21b_k.jpg",
+                    "https://live.staticflickr.com/4078/4914138831_83c09bc311_m.jpg",
                     "On 27/10/2021 at 10:00");
                 
                 appointments.Add(appointment);
