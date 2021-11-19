@@ -2,6 +2,7 @@ using Domain.Services;
 using Domain.Services.Class;
 using Domain.Setup;
 using Microsoft.Extensions.DependencyInjection;
+using Persistence.Repositories.FireStore;
 
 namespace Domain
 {
@@ -11,7 +12,7 @@ namespace Domain
         {
             services.AddSingleton<IMessageBus, MessageBus>();
             services.AddSingleton<IClassService, ClassService>();
-            services.AddSingleton<IFirebase, Firebase>();
+            services.AddSingleton<IFireStore, FireStore>();
             
             return services;
         }

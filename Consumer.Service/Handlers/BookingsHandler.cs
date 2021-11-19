@@ -2,20 +2,20 @@ using System;
 using System.Threading.Tasks;
 using Consumer.Service.Handlers.Interfaces;
 using Domain.Events;
-using Domain.Setup;
 using Persistence.Repositories.Classes;
+using Persistence.Repositories.FireStore;
 
 namespace Consumer.Service.Handlers
 {
     public class BookingsHandler : IBookingsHandler
     {
         private readonly IClassesRepository _repository;
-        private readonly IFirebase _firebase;
+        private readonly IFireStore _fireStore;
 
-        public BookingsHandler(IClassesRepository repository, IFirebase firebase)
+        public BookingsHandler(IClassesRepository repository, IFireStore fireStore)
         {
             _repository = repository;
-            _firebase = firebase;
+            _fireStore = fireStore;
         }
 
         public async Task HandleClassBooking(BookClassEvent evt)
@@ -45,7 +45,7 @@ namespace Consumer.Service.Handlers
                     newNumberOfParticipants,
                     evt.Email);
                 
-                await _firebase.AddUserToClass(evt.ClassId, evt.Email);
+                await _fireStore.AddUserToClass(evt.ClassId, evt.Email);
                 
                 Console.WriteLine("Booking added and class " + response.ClassName + " is now full!");
             }
@@ -56,7 +56,7 @@ namespace Consumer.Service.Handlers
                     newNumberOfParticipants,
                     evt.Email);
                 
-                await _firebase.AddUserToClass(evt.ClassId, evt.Email);
+                await _fireStore.AddUserToClass(evt.ClassId, evt.Email);
                 
                 Console.WriteLine("Class " + response.ClassName + " have a new booking!");
             }

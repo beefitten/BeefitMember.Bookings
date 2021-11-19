@@ -1,24 +1,14 @@
 /Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/bin/Debug/net5.0/appsettings.Development.json
 /Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/bin/Debug/net5.0/appsettings.json
 /Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/bin/Debug/net5.0/Domain.deps.json
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/bin/Debug/net5.0/Domain.runtimeconfig.json
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/bin/Debug/net5.0/Domain.runtimeconfig.dev.json
 /Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/bin/Debug/net5.0/Domain.dll
 /Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/bin/Debug/net5.0/ref/Domain.dll
 /Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/bin/Debug/net5.0/Domain.pdb
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/bin/Debug/net5.0/Microsoft.OpenApi.dll
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/bin/Debug/net5.0/Newtonsoft.Json.dll
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/bin/Debug/net5.0/RabbitMQ.Client.dll
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/bin/Debug/net5.0/Swashbuckle.AspNetCore.Swagger.dll
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/obj/Debug/net5.0/Domain.csprojAssemblyReference.cache
 /Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/obj/Debug/net5.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
 /Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/obj/Debug/net5.0/Domain.AssemblyInfoInputs.cache
 /Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/obj/Debug/net5.0/Domain.AssemblyInfo.cs
 /Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/obj/Debug/net5.0/Domain.csproj.CoreCompileInputs.cache
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/obj/Debug/net5.0/Domain.MvcApplicationPartsAssemblyInfo.cs
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/obj/Debug/net5.0/Domain.MvcApplicationPartsAssemblyInfo.cache
 /Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/obj/Debug/net5.0/staticwebassets/Domain.StaticWebAssets.Manifest.cache
 /Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/obj/Debug/net5.0/staticwebassets/Domain.StaticWebAssets.xml
 /Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/obj/Debug/net5.0/scopedcss/bundle/Domain.styles.css
@@ -27,26 +17,28 @@
 /Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/obj/Debug/net5.0/Domain.dll
 /Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/obj/Debug/net5.0/ref/Domain.dll
 /Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/obj/Debug/net5.0/Domain.pdb
-/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/obj/Debug/net5.0/Domain.genruntimeconfig.cache
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\bin\Debug\net5.0\appsettings.Development.json
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\bin\Debug\net5.0\appsettings.json
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\bin\Debug\net5.0\beefitmemberbookings-firebase.json
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\bin\Debug\net5.0\Domain.deps.json
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\bin\Debug\net5.0\Domain.dll
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\bin\Debug\net5.0\ref\Domain.dll
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\bin\Debug\net5.0\Domain.pdb
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\bin\Debug\net5.0\Persistence.dll
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\bin\Debug\net5.0\Persistence.pdb
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\obj\Debug\net5.0\Domain.csprojAssemblyReference.cache
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\obj\Debug\net5.0\staticwebassets\Domain.StaticWebAssets.Manifest.cache
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\obj\Debug\net5.0\staticwebassets\Domain.StaticWebAssets.xml
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\obj\Debug\net5.0\scopedcss\bundle\Domain.styles.css
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\obj\Debug\net5.0\Domain.RazorTargetAssemblyInfo.cache
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\obj\Debug\net5.0\Domain.csproj.CopyComplete
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\obj\Debug\net5.0\Domain.dll
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\obj\Debug\net5.0\ref\Domain.dll
-D:\Skole\7. semester\Bachelor\Git\BeefitMember.Bookings\Domain\obj\Debug\net5.0\Domain.pdb
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/bin/Debug/net5.0/appsettings.Development.json
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/bin/Debug/net5.0/appsettings.json
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/bin/Debug/net5.0/beefitmemberbookings-firebase.json
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/bin/Debug/net5.0/Domain.deps.json
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/bin/Debug/net5.0/Domain.dll
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/bin/Debug/net5.0/ref/Domain.dll
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/bin/Debug/net5.0/Domain.pdb
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/bin/Debug/net5.0/Persistence.dll
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/bin/Debug/net5.0/Persistence.pdb
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/obj/Debug/net5.0/Domain.csprojAssemblyReference.cache
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/obj/Debug/net5.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/obj/Debug/net5.0/Domain.AssemblyInfoInputs.cache
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/obj/Debug/net5.0/Domain.AssemblyInfo.cs
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/obj/Debug/net5.0/Domain.csproj.CoreCompileInputs.cache
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/obj/Debug/net5.0/staticwebassets/Domain.StaticWebAssets.Manifest.cache
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/obj/Debug/net5.0/staticwebassets/Domain.StaticWebAssets.xml
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/obj/Debug/net5.0/scopedcss/bundle/Domain.styles.css
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/obj/Debug/net5.0/Domain.RazorTargetAssemblyInfo.cache
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/obj/Debug/net5.0/Domain.csproj.CopyComplete
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/obj/Debug/net5.0/Domain.dll
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/obj/Debug/net5.0/ref/Domain.dll
+D:/Skole/7. semester/Bachelor/Git/BeefitMember.Bookings/Domain/obj/Debug/net5.0/Domain.pdb
+/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/bin/Debug/net5.0/beefitmemberbookings-firebase.json
+/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/bin/Debug/net5.0/Persistence.dll
+/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/bin/Debug/net5.0/Persistence.pdb

@@ -655,6 +655,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Google.Cloud.Firestore": "2.4.0",
           "Microsoft.Extensions.Configuration": "5.0.0",
           "Microsoft.Extensions.Configuration.Json": "5.0.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.2",
@@ -1739,19 +1740,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jonas\\.nuget\\packages\\": {}
+    "/Users/nikolajhuynh/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\RestAPI\\RestAPI.csproj",
+      "projectUniqueName": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/RestAPI/RestAPI.csproj",
       "projectName": "RestAPI",
-      "projectPath": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\RestAPI\\RestAPI.csproj",
-      "packagesPath": "C:\\Users\\Jonas\\.nuget\\packages\\",
-      "outputPath": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\RestAPI\\obj\\",
+      "projectPath": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/RestAPI/RestAPI.csproj",
+      "packagesPath": "/Users/nikolajhuynh/.nuget/packages/",
+      "outputPath": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/RestAPI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/nikolajhuynh/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -1763,8 +1764,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Domain\\Domain.csproj": {
-              "projectPath": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Domain\\Domain.csproj"
+            "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/Domain.csproj": {
+              "projectPath": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/Domain.csproj"
             }
           }
         }
@@ -1806,7 +1807,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Jonas\\.dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
       }
     }
   }

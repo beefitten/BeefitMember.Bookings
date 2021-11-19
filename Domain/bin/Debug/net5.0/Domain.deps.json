@@ -704,12 +704,12 @@
           "runtimes/win/native/snappy32.dll": {
             "rid": "win",
             "assetType": "native",
-            "fileVersion": "1.1.1.7"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win/native/snappy64.dll": {
             "rid": "win",
             "assetType": "native",
-            "fileVersion": "1.1.1.7"
+            "fileVersion": "0.0.0.0"
           }
         },
         "compile": {
@@ -845,11 +845,7 @@
         }
       },
       "System.Memory/4.5.4": {},
-      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
-        "compile": {
-          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {}
-        }
-      },
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {},
       "System.Text.Encoding.CodePages/4.5.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.2",
@@ -859,6 +855,7 @@
       "System.Threading.Channels/4.7.1": {},
       "Persistence/1.0.0": {
         "dependencies": {
+          "Google.Cloud.Firestore": "2.4.0",
           "Microsoft.Extensions.Configuration": "5.0.0",
           "Microsoft.Extensions.Configuration.Json": "5.0.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.2",

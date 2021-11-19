@@ -3,6 +3,7 @@ using Consumer.Service.Handlers.Interfaces;
 using Domain.Setup;
 using Microsoft.Extensions.DependencyInjection;
 using Persistence.Repositories.Classes;
+using Persistence.Repositories.FireStore;
 
 namespace Consumer.Service.Setup
 {
@@ -13,7 +14,7 @@ namespace Consumer.Service.Setup
             services
                 .AddTransient<IBookingsHandler, BookingsHandler>()
                 .AddTransient<IClassesRepository, ClassesRepository>()
-                .AddTransient<IFirebase, Firebase>();
+                .AddTransient<IFireStore, FireStore>();
             
             return services;
         }
