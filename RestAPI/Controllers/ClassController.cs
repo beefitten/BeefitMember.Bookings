@@ -39,7 +39,7 @@ namespace RestAPI.Controllers
             return Ok();
         }
         
-        [HttpPost]
+        [HttpDelete]
         [Route("/deleteBooking")]
         public IActionResult DeleteBooking(BookClassEvent evt)
         {
