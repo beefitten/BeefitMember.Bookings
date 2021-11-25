@@ -21,7 +21,7 @@ namespace RestAPI.Controllers
         
         [HttpPost]
         [Route("/addClass")]
-        public async Task<IActionResult> BookClass(ClassModel model)
+        public async Task<IActionResult> AddClass(ClassModel model)
         {
             var response = await _classService.AddClass(model);
 
@@ -36,6 +36,7 @@ namespace RestAPI.Controllers
         public IActionResult BookClass(BookClassEvent evt)
         {
             _classService.BookClass(evt);
+           
             return Ok();
         }
         
