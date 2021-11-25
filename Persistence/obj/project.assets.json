@@ -1445,19 +1445,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/nikolajhuynh/.nuget/packages/": {}
+    "C:\\Users\\Jonas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/Persistence.csproj",
+      "projectUniqueName": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Persistence\\Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/Persistence.csproj",
-      "packagesPath": "/Users/nikolajhuynh/.nuget/packages/",
-      "outputPath": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/obj/",
+      "projectPath": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Persistence\\Persistence.csproj",
+      "packagesPath": "C:\\Users\\Jonas\\.nuget\\packages\\",
+      "outputPath": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/nikolajhuynh/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -1517,7 +1517,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Jonas\\.dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

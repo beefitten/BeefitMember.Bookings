@@ -1737,19 +1737,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/nikolajhuynh/.nuget/packages/": {}
+    "C:\\Users\\Jonas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Consumer.Service/Consumer.Service.csproj",
+      "projectUniqueName": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Consumer.Service\\Consumer.Service.csproj",
       "projectName": "Consumer.Service",
-      "projectPath": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Consumer.Service/Consumer.Service.csproj",
-      "packagesPath": "/Users/nikolajhuynh/.nuget/packages/",
-      "outputPath": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Consumer.Service/obj/",
+      "projectPath": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Consumer.Service\\Consumer.Service.csproj",
+      "packagesPath": "C:\\Users\\Jonas\\.nuget\\packages\\",
+      "outputPath": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Consumer.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/nikolajhuynh/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -1761,11 +1761,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/Domain.csproj": {
-              "projectPath": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Domain/Domain.csproj"
+            "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Domain\\Domain.csproj"
             },
-            "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/Persistence.csproj": {
-              "projectPath": "/Users/nikolajhuynh/Documents/Bachelor/BeefitMember.Bookings/Persistence/Persistence.csproj"
+            "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Persistence\\Persistence.csproj": {
+              "projectPath": "D:\\Skole\\7. semester\\Bachelor\\Git\\BeefitMember.Bookings\\Persistence\\Persistence.csproj"
             }
           }
         }
@@ -1797,7 +1797,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Jonas\\.dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

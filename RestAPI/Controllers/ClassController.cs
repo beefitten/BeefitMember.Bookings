@@ -21,25 +21,30 @@ namespace RestAPI.Controllers
         
         [HttpPost]
         [Route("/addClass")]
-        public async Task<HttpStatusCode> BookClass(ClassModel model)
+        public async Task<IActionResult> BookClass(ClassModel model)
         {
-            return await _classService.AddClass(model);
+            var response = await _classService.AddClass(model);
+
+            if (response == HttpStatusCode.OK)
+                return Ok();
+
+            return Conflict();
         }
         
         [HttpPost]
         [Route("/bookClass")]
-        public HttpStatusCode BookClass(BookClassEvent evt)
+        public IActionResult BookClass(BookClassEvent evt)
         {
             _classService.BookClass(evt);
-            return HttpStatusCode.OK;
+            return Ok();
         }
         
         [HttpPost]
         [Route("/deleteBooking")]
-        public HttpStatusCode DeleteBooking(BookClassEvent evt)
+        public IActionResult DeleteBooking(BookClassEvent evt)
         {
             _classService.DeleteBooking(evt);
-            return HttpStatusCode.OK;
+            return Ok();
         }
         
         [HttpGet]

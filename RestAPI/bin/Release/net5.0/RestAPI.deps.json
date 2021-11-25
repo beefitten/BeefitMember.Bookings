@@ -872,6 +872,7 @@
       },
       "Persistence/1.0.0": {
         "dependencies": {
+          "Google.Cloud.Firestore": "2.4.0",
           "Microsoft.Extensions.Configuration": "5.0.0",
           "Microsoft.Extensions.Configuration.Json": "5.0.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.2",

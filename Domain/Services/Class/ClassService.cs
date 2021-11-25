@@ -30,9 +30,15 @@ namespace Domain.Services.Class
         {
             var classId = Guid.NewGuid();
 
-            await _fireStore.AddClass(classId);
-            
-            return await _repository.AddClass(model, classId);
+            try
+            {
+                await _fireStore.AddClass(classId);
+                return await _repository.AddClass(model, classId);
+            }
+            catch
+            {
+                throw new Exception("Something went wrong adding class: " + model.ClassName);
+            }
         }
 
         public void BookClass(BookClassEvent evt)
