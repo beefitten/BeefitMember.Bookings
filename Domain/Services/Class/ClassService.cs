@@ -32,8 +32,11 @@ namespace Domain.Services.Class
 
             try
             {
-                await _fireStore.AddClass(classId);
-                return await _repository.AddClass(model, classId);
+                await Task.WhenAll(
+                    _fireStore.AddClass(classId), 
+                    _repository.AddClass(model, classId));
+                
+                return HttpStatusCode.OK;
             }
             catch
             {

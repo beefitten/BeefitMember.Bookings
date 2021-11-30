@@ -19,7 +19,10 @@ namespace Persistence.Repositories.FireStore
 
         public async Task AddClass(Guid classId)
         {
-            var collection = _firestoreDatabase.Collection("Classes").Document($"{classId}");
+            var collection = _firestoreDatabase
+                .Collection("Classes")
+                .Document($"{classId}");
+            
             Dictionary<string, List<string>> participants = new Dictionary<string, List<string>>
             {
                 {"Participants", new List<string>()}

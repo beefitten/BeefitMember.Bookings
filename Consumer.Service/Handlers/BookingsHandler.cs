@@ -40,23 +40,23 @@ namespace Consumer.Service.Handlers
 
             if (newNumberOfParticipants == response.MaxParticipants)
             {
-                await _repository.AddBookingOnClass(evt.ClassId,
-                    true, 
-                    newNumberOfParticipants,
-                    evt.Email);
-                
-                await _fireStore.AddUserToClass(evt.ClassId, evt.Email);
+                await Task.WhenAll(
+                    _repository.AddBookingOnClass(evt.ClassId,
+                        true,
+                        newNumberOfParticipants,
+                        evt.Email),
+                    _fireStore.AddUserToClass(evt.ClassId, evt.Email));
                 
                 Console.WriteLine("Booking added and class " + response.ClassName + " is now full!");
             }
             else
             {
-                await _repository.AddBookingOnClass(evt.ClassId, 
-                    false, 
-                    newNumberOfParticipants,
-                    evt.Email);
-                
-                await _fireStore.AddUserToClass(evt.ClassId, evt.Email);
+                await Task.WhenAll(
+                    _repository.AddBookingOnClass(evt.ClassId,
+                        false,
+                        newNumberOfParticipants,
+                        evt.Email),
+                    _fireStore.AddUserToClass(evt.ClassId, evt.Email));
                 
                 Console.WriteLine("Class " + response.ClassName + " have a new booking!");
             }
