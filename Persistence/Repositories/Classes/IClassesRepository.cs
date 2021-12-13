@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
-using MongoDB.Bson;
 using Persistence.Repositories.Classes.Models;
 
 namespace Persistence.Repositories.Classes

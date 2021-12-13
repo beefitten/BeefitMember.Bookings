@@ -1,6 +1,5 @@
 using System;
 using System.Text;
-using System.Threading.Tasks;
 using Domain.Events;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
@@ -32,27 +31,28 @@ namespace Domain.Services
             }
         }
         
-        public async Task SendTrainerBookingMessage(BookTrainerEvent message)
-        {
-            if (ConnectionExists())
-            {
-                using (var channel = _connection.CreateModel())
-                {
-                    channel.QueueDeclare(queue: "trainerBooking", durable: false, exclusive: false, autoDelete: false,
-                        arguments: null);
-
-                    var json = JsonConvert.SerializeObject(message);
-                    var body = Encoding.UTF8.GetBytes(json);
-                    
-                    channel.BasicPublish(exchange:"", routingKey: "trainerBooking", basicProperties: null, body: body);
-                }
-            }
-        }
-
-        public Task ReceiveMessage()
-        {
-            throw new System.NotImplementedException();
-        }
+        /* Is ready to publish a message to RabbitMQ  */ 
+        // public async Task SendTrainerBookingMessage(BookTrainerEvent message)
+        // {
+        //     if (ConnectionExists())
+        //     {
+        //         using (var channel = _connection.CreateModel())
+        //         {
+        //             channel.QueueDeclare(queue: "trainerBooking", durable: false, exclusive: false, autoDelete: false,
+        //                 arguments: null);
+        //
+        //             var json = JsonConvert.SerializeObject(message);
+        //             var body = Encoding.UTF8.GetBytes(json);
+        //             
+        //             channel.BasicPublish(exchange:"", routingKey: "trainerBooking", basicProperties: null, body: body);
+        //         }
+        //     }
+        // }
+        //
+        // public Task ReceiveMessage()
+        // {
+        //     throw new System.NotImplementedException();
+        // }
 
         private void CreateConnection()
         {

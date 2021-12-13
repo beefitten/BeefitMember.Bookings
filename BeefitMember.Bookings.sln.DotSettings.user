@@ -1,5 +1,5 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bcfd05d3_002Db766_002D4e0f_002Da83a_002D902b79498244/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Call_AddClass_And_Throw_Exception_When_Classes_Cannot_Be_Added #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bcfd05d3_002Db766_002D4e0f_002Da83a_002D902b79498244/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Call_AddClass_And_Throw_Exception_When_Classes_Cannot_Be_Added #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bd63c35c_002D9bd7_002D45df_002D8493_002D4c4a5e24ccf1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Call_AddClass_And_Throw_Exception_When_Classes_Cannot_Be_Added" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
@@ -7,7 +7,7 @@
     &lt;TestId&gt;xUnit::299ED949-9585-4940-A7DD-CA9187D6C749::net5.0::Tests.Domain.UnitTests.ClassService_Should.Call_AddClass_And_Throw_Exception_When_Classes_Cannot_Be_Added&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cb082bbc_002D3830_002D46fe_002Db252_002D7f54b706f42b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Not_Invoke_Repositories_When_Not_Classes_Exist" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cb082bbc_002D3830_002D46fe_002Db252_002D7f54b706f42b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Not_Invoke_Repositories_When_Not_Classes_Exist" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::299ED949-9585-4940-A7DD-CA9187D6C749::net5.0::Tests.Consumer.Service.UnitTests.BookingHandler_Should&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::299ED949-9585-4940-A7DD-CA9187D6C749::net5.0::Tests.Domain.UnitTests.ClassService_Should.Invoke_Repositories_When_Adding_A_Class_Successfully&lt;/TestId&gt;&#xD;

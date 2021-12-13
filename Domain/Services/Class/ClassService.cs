@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 using Domain.Events;
-using Domain.Setup;
 using Persistence.Repositories.Classes;
 using Persistence.Repositories.Classes.Models;
 using Persistence.Repositories.FireStore;

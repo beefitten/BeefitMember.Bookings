@@ -11,8 +11,7 @@ namespace Persistence
                 .AddJsonFile(Path.Combine(Directory.GetCurrentDirectory(), "appsettings.json"), optional: false)
                 .AddJsonFile(Path.Combine(Directory.GetCurrentDirectory(), "appsettings.Development.json"), optional: true)
                 .Build();
-            var d = configuration.GetSection("ConnectionStrings").GetSection("ConString").Value;
-            return d;
+            return configuration.GetSection("ConnectionStrings").GetSection("ConString").Value;
         }
     }
 }
